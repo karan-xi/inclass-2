@@ -1,0 +1,101 @@
+/*karan patel 8911445*/
+body{
+    font: normal normal normal 12px/1.5 Arial, Helvetica, sans-serif;
+    width: 100vw;
+    height: 100vh;
+background-color: rgb(126, 102, 194);
+}
+h2{
+    color: #fc2;
+    font-size: 2em;
+
+}
+h1{
+    color: blueviolet;
+    font-size: 30px;
+}
+header{
+    background-color: hsl(200, 22%, 47%);
+}
+
+nav ul li {
+    display: inline;
+    list-style: none;
+}
+nav ul li a {
+    color: indigo;
+    border: 2px solid indigo;
+    background-color: cornsilk;
+    text-decoration: none;
+    padding: 5px;
+}
+nav ul li a:hover{
+    color: cornsilk;
+    background-color: indigo;
+    border-color: cornsilk;
+}
+main{
+    float: left;
+    width: 65vw;
+    background-color: hsl(208, 73%, 71%);
+}
+aside{
+    float : right;
+    width : 25vw;
+    background-color: hsl(67, 88%, 32%);
+
+}
+aside li{
+    list-style-type: square;
+    line-height: 2em;
+}
+ aside a{
+    color: rgba(227, 91, 91, 0.7);
+}
+aside, a:hover{
+    color: #fc2;
+}
+footer{
+    clear : both;
+    background-color: hsl(176, 86%, 44%);
+}
+.structural{
+    margin : 10px;
+    padding : 10px;
+    border : 2px solid black;
+}
+#para1{
+color: rgb(72, 39, 39);
+}
+#para2{
+
+    color: rgb(181, 22, 138);
+}
+form{
+    border: 5px  dashed rgb(1, 18, 1);
+    padding: 5px;
+}
+input[type=text], input[type=email] , input[type=submit] , select,option {
+display: block;
+width: 50%;
+height: 2em;
+}
+input[type=radio], input[type=checkbox]{
+    height: 2em;
+    width: 2em;
+}
+select,option, label,legend,input[type=submit]{
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+textarea{
+    display: block;
+    width: 50%;
+}
+fieldset{
+    border: none;
+}
+footer p {
+    font-size: .75em;
+}
