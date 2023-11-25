@@ -1,18 +1,22 @@
 /*karan patel 8911445*/
-body{
+html{
     font: normal normal normal 12px/1.5 Arial, Helvetica, sans-serif;
+}
+body{
     width: 100vw;
     height: 100vh;
 background-color: rgb(126, 102, 194);
+display: flex;
+flex-direction: column;
 }
 h2{
     color: #fc2;
-    font-size: 2em;
+    font-size: 2rem;
 
 }
 h1{
     color: blueviolet;
-    font-size: 30px;
+    font-size: 2rem;
 }
 header{
     background-color: hsl(200, 22%, 47%);
@@ -24,24 +28,29 @@ nav ul li {
 }
 nav ul li a {
     color: indigo;
-    border: 2px solid indigo;
+    border: 0.1em solid indigo;
     background-color: cornsilk;
     text-decoration: none;
-    padding: 5px;
+    padding: 0.25rem;
 }
 nav ul li a:hover{
     color: cornsilk;
     background-color: indigo;
     border-color: cornsilk;
 }
+section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
 main{
-    float: left;
-    width: 65vw;
+    flex: 2 1 70%;
     background-color: hsl(208, 73%, 71%);
 }
 aside{
-    float : right;
-    width : 25vw;
+    flex: 1 1 30%;
     background-color: hsl(67, 88%, 32%);
 
 }
@@ -56,13 +65,13 @@ aside, a:hover{
     color: #fc2;
 }
 footer{
-    clear : both;
+    
     background-color: hsl(176, 86%, 44%);
 }
 .structural{
-    margin : 10px;
-    padding : 10px;
-    border : 2px solid black;
+    margin : 1rem;
+    padding : 1rem;
+    border : 0.1rem solid black;
 }
 #para1{
 color: rgb(72, 39, 39);
@@ -72,8 +81,8 @@ color: rgb(72, 39, 39);
     color: rgb(181, 22, 138);
 }
 form{
-    border: 5px  dashed rgb(1, 18, 1);
-    padding: 5px;
+    border: 0.1rem dashed rgb(1, 18, 1);
+    padding: 0.25rem;
 }
 input[type=text], input[type=email] , input[type=submit] , select,option {
 display: block;
@@ -98,4 +107,30 @@ fieldset{
 }
 footer p {
     font-size: .75em;
+}
+ img{
+    width: 80%;
+    height: 80%;
+}
+figure{
+    border: 0.1em solid ;
+}
+#gallery{
+    display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+row-gap: 0.5rem;
+column-gap: 0.5rem;
+}
+@media(max-width : 600px){
+    html{
+    font-size: 10px;
+}
+#gallery{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+section{
+    display: block;
+}
 }
